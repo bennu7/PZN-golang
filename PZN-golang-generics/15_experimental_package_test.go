@@ -3,7 +3,8 @@ package pzngolanggenerics
 import (
 	"github.com/stretchr/testify/assert"
 	"golang.org/x/exp/constraints"
-	"maps"
+	"golang.org/x/exp/maps"
+	"golang.org/x/exp/slices"
 	"testing"
 )
 
@@ -33,4 +34,11 @@ func TestExperimentalMaps(t *testing.T) {
 	}
 
 	assert.True(t, maps.Equal(first, second))
+}
+
+func TestExperimentalSlices(t *testing.T) {
+	first := []string{"John", "Doe"}
+	second := []string{"John", "Doe"}
+
+	assert.True(t, slices.Equal(first, second))
 }
