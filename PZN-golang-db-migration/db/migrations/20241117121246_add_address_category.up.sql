@@ -1,0 +1,2 @@
+ALTER TABLE category
+ADD COLUMN address VARCHAR(255) NULL;
